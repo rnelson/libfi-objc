@@ -1,6 +1,6 @@
 # FoodInspections
 
-[![CI Status](http://img.shields.io/travis/rnelson/FoodInspections.svg?style=flat)](https://travis-ci.org/rnelson/FoodInspections)
+[![CI Status](http://img.shields.io/travis/rnelson/libfi-objc.svg?style=flat)](https://travis-ci.org/rnelson/libfi-objc)
 [![Version](https://img.shields.io/cocoapods/v/FoodInspections.svg?style=flat)](http://cocoadocs.org/docsets/FoodInspections)
 [![License](https://img.shields.io/cocoapods/l/FoodInspections.svg?style=flat)](http://cocoadocs.org/docsets/FoodInspections)
 [![Platform](https://img.shields.io/cocoapods/p/FoodInspections.svg?style=flat)](http://cocoadocs.org/docsets/FoodInspections)
