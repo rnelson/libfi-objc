@@ -1,0 +1,7 @@
+
+target 'FoodInspections', :exclusive => true do
+  pod "FoodInspections", :path => "../"
+
+  pod 'Specta', '~> 0.2.1'
+  pod 'Expecta'
+end
