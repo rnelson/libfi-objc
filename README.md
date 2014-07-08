@@ -1,6 +1,6 @@
 # FoodInspections
 
-[![CI Status](http://img.shields.io/travis/Ross Nelson/FoodInspections.svg?style=flat)](https://travis-ci.org/Ross Nelson/FoodInspections)
+[![CI Status](http://img.shields.io/travis/rnelson/FoodInspections.svg?style=flat)](https://travis-ci.org/rnelson/FoodInspections)
 [![Version](https://img.shields.io/cocoapods/v/FoodInspections.svg?style=flat)](http://cocoadocs.org/docsets/FoodInspections)
 [![License](https://img.shields.io/cocoapods/l/FoodInspections.svg?style=flat)](http://cocoadocs.org/docsets/FoodInspections)
 [![Platform](https://img.shields.io/cocoapods/p/FoodInspections.svg?style=flat)](http://cocoadocs.org/docsets/FoodInspections)
@@ -20,7 +20,7 @@ it, simply add the following line to your Podfile:
 
 ## Author
 
-Ross Nelson, ross.nelson@gmail.com
+Ross Nelson, [@rossnelson](http://twitter.com/rossnelson)
 
 ## License
 
