@@ -1,7 +1,7 @@
 # pod lib lint FoodInspections.podspec
 Pod::Spec.new do |s|
   s.name             = "FoodInspections"
-  s.version          = "1.0"
+  s.version          = "1.0.1"
   s.summary          = "Library to access the v1 Food Inspections API."
   s.homepage         = "https://github.com/rnelson/FoodInspections"
   s.license          = 'MIT'
