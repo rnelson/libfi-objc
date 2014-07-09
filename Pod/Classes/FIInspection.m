@@ -58,7 +58,6 @@
 														 options:kNilOptions
 														   error:&error];
 	if (error) {
-		NSLog(@"%@", error); // /api/v1/inspections breaks, leaving this to show that
 		return nil;
 	}
 	
@@ -83,12 +82,6 @@
 -(FIFirm *) firm {
 	return [FIFirm loadById:self.firmId];
 }
-
-// /api/v1/inspections
-//+(NSArray *) loadAll {
-//	NSString *path = @"/inspections";
-//	return [FIInspection parseMultipleInspections:[[FoodInspections client]requestWithPath:path]];
-//}
 
 // /api/v1/inspections/:databaseId
 +(FIInspection *) loadById:(int)databaseId {

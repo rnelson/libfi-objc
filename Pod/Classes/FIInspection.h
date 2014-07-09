@@ -25,7 +25,6 @@
 +(FIInspection *) parseSingleInspection:(FIApiResponse *)responseObject;
 +(NSArray *) parseMultipleInspections:(FIApiResponse *)responseObject;
 
-//+(NSArray *) loadAll;
 +(FIInspection *) loadById:(int)databaseId;
 +(NSArray *) loadAllForFirm:(FIFirm *)firm;
 +(NSArray *) loadAllForFirmByFirmId:(int)firmId;
