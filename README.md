@@ -13,7 +13,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 FoodInspections is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-    pod "FoodInspections"
+    pod "FoodInspections", :git => "https://github.com/rnelson/libfi-objc.git"
+
+and run `pod install`.
 
 ## Author
 
