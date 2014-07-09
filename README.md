@@ -1,7 +1,5 @@
 # FoodInspections
 
-[![CI Status](http://img.shields.io/travis/rnelson/libfi-objc.svg?style=flat)](https://travis-ci.org/rnelson/libfi-objc)
-
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
