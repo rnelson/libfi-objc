@@ -55,6 +55,8 @@
 		553F6799D6F04834B8C919F7 /* Pods-FoodInspections-Specta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB5B93A488C4A42949F3357 /* Pods-FoodInspections-Specta-dummy.m */; };
 		5977631B84584961895FA382 /* SPTXCTestReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9320DB5AC64E7CB6C68385 /* SPTXCTestReporter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
 		5A958053539B43C2B8C4F580 /* FIApiClient.h in Headers */ = {isa = PBXBuildFile; fileRef = F2A2575122354654857DEBE9 /* FIApiClient.h */; };
+		5B2C922C196E1E86005B5AC9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2C922B196E1E86005B5AC9 /* CoreLocation.framework */; };
+		5B2C9230196E1F2F005B5AC9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2C922F196E1F2F005B5AC9 /* MapKit.framework */; };
 		5B48557399F843A3BC0B1874 /* SpectaSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = D94F36312952408F8309A2CD /* SpectaSupport.h */; };
 		5F280A967120419FB09DDE88 /* EXPDoubleTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = F69F0169A6B141FCBCA6DEFC /* EXPDoubleTuple.m */; };
 		61CEF94C96AB4B96AF1705EA /* EXPMatchers+beTruthy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D3D0B1DF5E4C10805757F1 /* EXPMatchers+beTruthy.m */; };
@@ -214,6 +216,9 @@
 		530C4564386B4039BF052597 /* EXPMatchers+beFalsy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beFalsy.m"; path = "src/matchers/EXPMatchers+beFalsy.m"; sourceTree = "<group>"; };
 		549AA3713E0C4604A7C8BD5D /* EXPMatchers+notify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+notify.h"; path = "src/matchers/EXPMatchers+notify.h"; sourceTree = "<group>"; };
 		56E66F803C5649EFA0A1EDF1 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5B2C922B196E1E86005B5AC9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		5B2C922D196E1ED0005B5AC9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		5B2C922F196E1F2F005B5AC9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
 		5D9320DB5AC64E7CB6C68385 /* SPTXCTestReporter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTXCTestReporter.m; path = src/SPTXCTestReporter.m; sourceTree = "<group>"; };
 		6051E864CB1F4D478727CE5B /* EXPMatchers+respondTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+respondTo.m"; path = "src/matchers/EXPMatchers+respondTo.m"; sourceTree = "<group>"; };
 		67B6CDDF4BC244A5B8C13582 /* EXPBlockDefinedMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPBlockDefinedMatcher.h; path = src/EXPBlockDefinedMatcher.h; sourceTree = "<group>"; };
@@ -314,6 +319,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B2C9230196E1F2F005B5AC9 /* MapKit.framework in Frameworks */,
+				5B2C922C196E1E86005B5AC9 /* CoreLocation.framework in Frameworks */,
 				4A50D10F05004CDE82C6729D /* Foundation.framework in Frameworks */,
 				85EC86C911D14B75B1D4F5A5 /* libPods-FoodInspections-Expecta.a in Frameworks */,
 				DD3AF68AE6054EE7A77A1176 /* libPods-FoodInspections-FoodInspections.a in Frameworks */,
@@ -440,6 +447,9 @@
 		3E20042B4C4349389EE0226A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5B2C922F196E1F2F005B5AC9 /* MapKit.framework */,
+				5B2C922D196E1ED0005B5AC9 /* UIKit.framework */,
+				5B2C922B196E1E86005B5AC9 /* CoreLocation.framework */,
 				DB53866423244203A37E14EE /* iOS */,
 			);
 			name = Frameworks;

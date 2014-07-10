@@ -6,6 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
 #import "FoodInspections.h"
 #import "FICoordinate.h"
 #import "FIInspection.h"
@@ -31,5 +33,6 @@
 +(NSArray *) loadByLatitude:(double)latitude withLongitude:(double)longitude andRadius:(int)radius;
 +(NSArray *) loadByBoundingBox:(NSString *)box;
 +(NSArray *) loadWithinTop:(double)top andBottom:(double)bottom andLeft:(double)left andRight:(double)right;
++(NSArray *) loadWithinMapView:(MKMapView *)mapView;
 
 @end

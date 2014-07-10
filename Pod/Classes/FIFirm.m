@@ -111,4 +111,17 @@
 	return [self loadByBoundingBox:box];
 }
 
++(NSArray *) loadWithinMapView:(MKMapView *)mapView {
+	CGPoint nePoint, swPoint;
+	CLLocationCoordinate2D neCoord, swCoord;
+	
+	// Find the lat/long of the map bounds
+	nePoint = CGPointMake(mapView.bounds.origin.x + mapView.bounds.size.width, mapView.bounds.origin.y);
+	swPoint = CGPointMake((mapView.bounds.origin.x), (mapView.bounds.origin.y + mapView.bounds.size.height));
+	neCoord = [mapView convertPoint:nePoint toCoordinateFromView:mapView];
+	swCoord = [mapView convertPoint:swPoint toCoordinateFromView:mapView];
+	
+	return [FIFirm loadWithinTop:neCoord.latitude andBottom:swCoord.latitude andLeft:swCoord.longitude andRight:neCoord.longitude];
+}
+
 @end
