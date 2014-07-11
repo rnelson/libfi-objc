@@ -22,7 +22,6 @@
 @property (nonatomic) int totalCritical;
 @property (nonatomic) int totalNoncritical;
 @property (nonatomic) FICoordinate *coordinate;
-@property (nonatomic, copy) NSArray *inspections;
 
 +(FIFirm *) parseSingleFirm:(FIApiResponse *)responseObject;
 +(NSArray *) parseMultipleFirms:(FIApiResponse *)responseObject;
@@ -34,5 +33,7 @@
 +(NSArray *) loadByBoundingBox:(NSString *)box;
 +(NSArray *) loadWithinTop:(double)top andBottom:(double)bottom andLeft:(double)left andRight:(double)right;
 +(NSArray *) loadWithinMapView:(MKMapView *)mapView;
+
+-(NSArray *) inspections;
 
 @end

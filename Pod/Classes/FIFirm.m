@@ -9,7 +9,7 @@
 
 @implementation FIFirm
 
-@synthesize databaseId, firmId, name, parentName, address, totalCritical, totalNoncritical, coordinate, inspections;
+@synthesize databaseId, firmId, name, parentName, address, totalCritical, totalNoncritical, coordinate;
 
 -(id) init {
 	self = [super init];
@@ -38,7 +38,6 @@
 	firm.totalNoncritical = [[json objectForKey:@"total_noncritical"] intValue];
 	firm.coordinate.latitude = [[json objectForKey:@"lat"] doubleValue];
 	firm.coordinate.longitude = [[json objectForKey:@"lng"] doubleValue];
-	firm.inspections = [FIInspection loadAllForFirmByFirmId:firm.firmId];
 	
 	return firm;
 }
@@ -67,12 +66,15 @@
 		firm.totalNoncritical = [[dict objectForKey:@"total_noncritical"] intValue];
 		firm.coordinate.latitude = [[dict objectForKey:@"lat"] doubleValue];
 		firm.coordinate.longitude = [[dict objectForKey:@"lng"] doubleValue];
-		firm.inspections = [FIInspection loadAllForFirmByFirmId:firm.firmId];
 		
 		[ret addObject:firm];
 	}
 	
 	return ret;
+}
+
+-(NSArray *) inspections {
+	return [FIInspection loadAllForFirmByFirmId:self.firmId];
 }
 
 // /api/v1/firms
