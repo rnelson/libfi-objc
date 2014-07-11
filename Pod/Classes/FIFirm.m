@@ -107,7 +107,7 @@
 
 // /api/v1/firms/bbox/:top,:left,:bottom,:right
 +(NSArray *) loadWithinTop:(double)top andBottom:(double)bottom andLeft:(double)left andRight:(double)right {
-	NSString *box = [NSString stringWithFormat:@"%f,%f,%f,%f", top, bottom, left, right];
+	NSString *box = [NSString stringWithFormat:@"%f,%f,%f,%f", top, left, bottom, right];
 	return [self loadByBoundingBox:box];
 }
 
